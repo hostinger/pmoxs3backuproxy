@@ -65,6 +65,16 @@ func ListSnapshots(c minio.Client, datastore string, returnCorrupted bool) ([]Sn
 				corrupted:  false,
 			}
 
+			tags, err := S.ReadTags(c)
+			if err == nil {
+				if val, ok := tags["protected"]; ok && val == "true" {
+					S.Protected = true
+					s3backuplog.DebugPrint("Snapshot %s marked as protected (from tags)", S.S3Prefix())
+				}
+			} else {
+				s3backuplog.DebugPrint("Unable to get tags for %s: %s", S.S3Prefix(), err)
+			}
+
 			if len(path) == 3 {
 				S.Files = append(S.Files, SnapshotFile{
 					Filename:  path[2],
