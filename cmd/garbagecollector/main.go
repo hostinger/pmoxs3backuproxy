@@ -156,7 +156,9 @@ func main() {
 	s3backuplog.InfoPrint("%v snapshots in bucket", len(snapshots))
 	for _, s := range snapshots {
 		if s.BackupTime+(uint64(*retentionDays))*86400 < uint64(time.Now().Unix()) {
-			if s.Protected == true {
+			// Fetch S3 Ceph tags
+			tags, err := s.ReadTags(*minioClient)
+			if (err == nil && tags["protected"] == "true") || s.Protected {
 				s3backuplog.InfoPrint("Backup %s,%s/%d is older than %d but marked as protected, skip removal.",
 					s.S3Prefix,
 					s.BackupID,
