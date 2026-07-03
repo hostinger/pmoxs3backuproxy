@@ -1,6 +1,6 @@
 module tizbac/pmoxs3backuproxy
 
-go 1.24.0
+go 1.25.0
 
 require (
 	github.com/elbandi/go-proxmox-backup-client v0.0.0-20230507001507-b7f2bd6f7fcd
@@ -9,7 +9,7 @@ require (
 	github.com/juju/mutex/v2 v2.0.0
 	github.com/minio/minio-go/v7 v7.0.74
 	github.com/schollz/progressbar/v3 v3.18.0
-	golang.org/x/net v0.47.0
+	golang.org/x/net v0.55.0
 )
 
 require (
@@ -23,8 +23,8 @@ require (
 	github.com/mitchellh/colorstring v0.0.0-20190213212951-d06e56a500db // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/rs/xid v1.5.0 // indirect
-	golang.org/x/crypto v0.45.0 // indirect
-	golang.org/x/sys v0.38.0 // indirect
-	golang.org/x/term v0.37.0 // indirect
-	golang.org/x/text v0.31.0 // indirect
+	golang.org/x/crypto v0.51.0 // indirect
+	golang.org/x/sys v0.45.0 // indirect
+	golang.org/x/term v0.43.0 // indirect
+	golang.org/x/text v0.37.0 // indirect
 )
