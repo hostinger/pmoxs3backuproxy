@@ -34,8 +34,8 @@ github.com/juju/utils/v3 v3.0.0-20220130232349-cd7ecef0e94a h1:5ZWDCeCF0RaITrZGe
 github.com/juju/utils/v3 v3.0.0-20220130232349-cd7ecef0e94a/go.mod h1:LzwbbEN7buYjySp4nqnti6c6olSqRXUk6RkbSUUP1n8=
 github.com/juju/version/v2 v2.0.0-20211007103408-2e8da085dc23 h1:wtEPbidt1VyHlb8RSztU6ySQj29FLsOQiI9XiJhXDM4=
 github.com/juju/version/v2 v2.0.0-20211007103408-2e8da085dc23/go.mod h1:Ljlbryh9sYaUSGXucslAEDf0A2XUSGvDbHJgW8ps6nc=
-github.com/klauspost/compress v1.17.9 h1:6KIumPrER1LHsvBVuDa0r5xaG0Es51mhhB9BQB2qeMA=
-github.com/klauspost/compress v1.17.9/go.mod h1:Di0epgTjJY877eYKx5yC51cX2A2Vl2ibi7bDH9ttBbw=
+github.com/klauspost/compress v1.18.7 h1:aUyZsS4kH3QTKurYhAOwAHxllVPnOthb3vPfnF1Ehjw=
+github.com/klauspost/compress v1.18.7/go.mod h1:cwPg85FWrGar70rWktvGQj8/hthj3wpl0PGDogxkrSQ=
 github.com/klauspost/cpuid/v2 v2.0.1/go.mod h1:FInQzS24/EEf25PyTYn52gqo7WaD8xa0213Md/qVLRg=
 github.com/klauspost/cpuid/v2 v2.2.8 h1:+StwCXwm9PdpiEkPyzBXIy+M9KUb4ODm0Zarf1kS5BM=
 github.com/klauspost/cpuid/v2 v2.2.8/go.mod h1:Lcz8mBdAVJIBVzewtcLocK12l3Y+JytZYpaMropDUws=
